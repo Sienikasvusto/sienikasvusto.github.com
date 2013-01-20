@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: about me - Cloudy day</title>
+  <title>HTTP gateway using hipache and airfield - Cloudy day</title>
   <meta name="author" content="Teemu Heikkilä">
 
   
-  <meta name="description" content="Category: about me">
+  <meta name="description" content="Do you need HTTP proxy supporting WebSockets?
+Do you want to manage it in real time without restarting the proxy? Then use hipache Do you then need a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Sienikasvusto.github.comblog/categories/about-me/">
+  <link rel="canonical" href="http://Sienikasvusto.github.com/blog/2013/01/19/http-gateway-using-hipache-and-airfield/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -64,35 +65,125 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: About Me</h1>
+    
+      <h1 class="entry-title">HTTP Gateway Using Hipache and Airfield</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-19T17:05:00+02:00" pubdate data-updated="true">Jan 19<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Do you need HTTP proxy supporting WebSockets?
+Do you want to manage it in real time without restarting the proxy?</p>
 
-  
-  <h2>2013</h2>
+<p>Then use <a href="https://github.com/dotcloud/hipache">hipache</a></p>
 
-<article>
-  
-<h1><a href="/blog/2013/01/17/initial-commit/">Initial commit</a></h1>
-<time datetime="2013-01-17T22:41:00+02:00" pubdate><span class='month'>Jan</span> <span class='day'>17</span> <span class='year'>2013</span></time>
+<p>Do you then need a nice web gui for it?</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/about-me/'>about me</a>, <a class='category' href='/blog/categories/coding/'>coding</a>, <a class='category' href='/blog/categories/first-post/'>first post</a>, <a class='category' href='/blog/categories/git-jokes/'>git-jokes</a></span>
-</footer>
+<p>If you answered yes then use <a href="https://github.com/emblica/airfield">airfield</a> with it.</p>
+
+<p>Here&#8217;s quick tutorial for installing both of them.</p>
+
+<ol>
+<li>Install node.js and npm</li>
+<li>Install redis</li>
+<li><p><strong>Install hipache</strong></p>
+
+<pre><code> $ npm install hipache -g
+</code></pre></li>
+<li><p>Add configuration script and upstart-config (config.json, hipache.conf)</p></li>
+</ol>
 
 
-</article>
+<script src="https://gist.github.com/4573125.js"></script>
+
+
+<ol>
+<li><p>Install Airfield</p>
+
+<pre><code> $ git clone https://github.com/emblica/airfield.git
+ $ cd airfield
+ $ npm install
+</code></pre></li>
+<li><p>Configure Airfield by editing <strong>settings.js</strong></p></li>
+<li>Create upstart config for airfield by modifying the script above.</li>
+<li><p>Start services</p>
+
+<pre><code> $ sudo start hipache
+ $ sudo start airfield
+</code></pre></li>
+<li><p>Configure hipache routing with airfield from webinterface <a href="http://yourserver:airfield_port/">http://yourserver:airfield_port/</a></p></li>
+</ol>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Teemu Heikkilä</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-19T17:05:00+02:00" pubdate data-updated="true">Jan 19<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/airfield/'>airfield</a>, <a class='category' href='/blog/categories/hipache/'>hipache</a>, <a class='category' href='/blog/categories/http-proxy/'>http-proxy</a>, <a class='category' href='/blog/categories/node/'>node</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Sienikasvusto.github.com/blog/2013/01/19/http-gateway-using-hipache-and-airfield/" data-via="sienikasvusto" data-counturl="http://Sienikasvusto.github.com/blog/2013/01/19/http-gateway-using-hipache-and-airfield/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/01/17/protip-create-virtual-nic-e-dot-g-when-deploying-openstack-in-linux/" title="Previous Post: Protip: Create virtual NIC (e.g. when deploying openstack) in linux">&laquo; Protip: Create virtual NIC (e.g. when deploying openstack) in linux</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

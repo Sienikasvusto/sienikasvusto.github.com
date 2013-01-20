@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hipache | Cloudy day]]></title>
+  <link href="http://Sienikasvusto.github.com/blog/categories/hipache/atom.xml" rel="self"/>
+  <link href="http://Sienikasvusto.github.com/"/>
+  <updated>2013-01-20T19:42:56+02:00</updated>
+  <id>http://Sienikasvusto.github.com/</id>
+  <author>
+    <name><![CDATA[Teemu Heikkilä]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[HTTP gateway using hipache and airfield]]></title>
+    <link href="http://Sienikasvusto.github.com/blog/2013/01/19/http-gateway-using-hipache-and-airfield/"/>
+    <updated>2013-01-19T17:05:00+02:00</updated>
+    <id>http://Sienikasvusto.github.com/blog/2013/01/19/http-gateway-using-hipache-and-airfield</id>
+    <content type="html"><![CDATA[<p>Do you need HTTP proxy supporting WebSockets?
+Do you want to manage it in real time without restarting the proxy?</p>
+
+<p>Then use <a href="https://github.com/dotcloud/hipache">hipache</a></p>
+
+<p>Do you then need a nice web gui for it?</p>
+
+<p>If you answered yes then use <a href="https://github.com/emblica/airfield">airfield</a> with it.</p>
+
+<p>Here's quick tutorial for installing both of them.</p>
+
+<ol>
+<li>Install node.js and npm</li>
+<li>Install redis</li>
+<li><p><strong>Install hipache</strong></p>
+
+<pre><code> $ npm install hipache -g
+</code></pre></li>
+<li><p>Add configuration script and upstart-config (config.json, hipache.conf)</p></li>
+</ol>
+
+
+<script src="https://gist.github.com/4573125.js"></script>
+
+
+<ol>
+<li><p>Install Airfield</p>
+
+<pre><code> $ git clone https://github.com/emblica/airfield.git
+ $ cd airfield
+ $ npm install
+</code></pre></li>
+<li><p>Configure Airfield by editing <strong>settings.js</strong></p></li>
+<li>Create upstart config for airfield by modifying the script above.</li>
+<li><p>Start services</p>
+
+<pre><code> $ sudo start hipache
+ $ sudo start airfield
+</code></pre></li>
+<li><p>Configure hipache routing with airfield from webinterface <a href="http://yourserver:airfield_port/">http://yourserver:airfield_port/</a></p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
