@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Openstack | Cloudy day]]></title>
+  <link href="http://Sienikasvusto.github.com/blog/categories/openstack/atom.xml" rel="self"/>
+  <link href="http://Sienikasvusto.github.com/"/>
+  <updated>2013-01-17T23:48:16+02:00</updated>
+  <id>http://Sienikasvusto.github.com/</id>
+  <author>
+    <name><![CDATA[Teemu Heikkilä]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Protip: Create virtual NIC (e.g. when deploying openstack) in linux]]></title>
+    <link href="http://Sienikasvusto.github.com/blog/2013/01/17/protip-create-virtual-nic-e-dot-g-when-deploying-openstack-in-linux/"/>
+    <updated>2013-01-17T23:05:00+02:00</updated>
+    <id>http://Sienikasvusto.github.com/blog/2013/01/17/protip-create-virtual-nic-e-dot-g-when-deploying-openstack-in-linux</id>
+    <content type="html"><![CDATA[<p>If you are going to deploy Openstack Folsom on single host with only one network interface (NIC) You are in big trouble. Unless you can use google and other nasty methods (like brains and irc) you have to be a god with openstack to understand all those creepy parameters and things.</p>
+
+<p>Fortunately there's simple way to do another NIC for example to use with <a href="https://github.com/speedis/QuickInstallFolsom">QuickInstallFolsom</a> script.</p>
+
+<script src="https://gist.github.com/4557529.js"></script>
+
+]]></content>
+  </entry>
+  
+</feed>

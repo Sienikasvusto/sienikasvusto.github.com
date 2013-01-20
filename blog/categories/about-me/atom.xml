@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: about me | Cloudy day]]></title>
+  <link href="http://Sienikasvusto.github.com/blog/categories/about-me/atom.xml" rel="self"/>
+  <link href="http://Sienikasvusto.github.com/"/>
+  <updated>2013-01-17T23:48:16+02:00</updated>
+  <id>http://Sienikasvusto.github.com/</id>
+  <author>
+    <name><![CDATA[Teemu Heikkilä]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Initial commit]]></title>
+    <link href="http://Sienikasvusto.github.com/blog/2013/01/17/initial-commit/"/>
+    <updated>2013-01-17T22:41:00+02:00</updated>
+    <id>http://Sienikasvusto.github.com/blog/2013/01/17/initial-commit</id>
+    <content type="html"><![CDATA[<p>I have started lots of blogs during my life and as you can probably guess, non of these lives no longer.</p>
+
+<p>So how this time is different:</p>
+
+<ul>
+<li><p>I’m writing english and that will cause shitloads of fails in the means of grammar (if you happen to be an english teacher or similar random grammar-nazi then you should worry)</p></li>
+<li><p>I’m not sure but I think that this is first blog (and first time) when I was like (hate that “I was like”-structure but…) “I have to write somewhere about this”.</p></li>
+<li><p>This is very tech-oriented blog as you can probably see from the title of blog.
+Well as I previously said, I did have feeling that I have to write about it somewhere, so read my next post.</p></li>
+</ul>
+
+
+<h3>Few things about me.</h3>
+
+<p>I’m 19 years old, nerd, not hipster, nice guy, photographer and coder.</p>
+
+<p>As a side note I have my own company founded when I was 15 years old. It’s cloud related as you can guess. Apps for 2010-century I can say. I’m not gonna tell you about my company anymore but more about what I do with computers. So this blog is more personal. Blueprints of my life as a nerd.</p>
+]]></content>
+  </entry>
+  
+</feed>
